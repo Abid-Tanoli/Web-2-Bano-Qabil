@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>GitHub Profile Viewer</title>
+</head>
+<body>
+    <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="dark-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="container">
+    <form id="form">
+      <input type="text" id="search" placeholder="Enter GitHub username" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="history" class="history"></div>
+
+    <div class="filter-sort">
+      <input type="text" id="filter" placeholder="Filter properties..." />
+      <select id="sort">
+        <option value="">Sort By</option>
+        <option value="asc">A → Z</option>
+        <option value="desc">Z → A</option>
+      </select>
+    </div>
+
+    <div id="main">
+      <p class="placeholder">Enter a GitHub username to view full profile</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

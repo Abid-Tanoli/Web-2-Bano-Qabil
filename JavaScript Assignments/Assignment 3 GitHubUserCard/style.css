@@ -1,0 +1,258 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #0073e6;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005bb5;
+}
+
+.placeholder {
+  font-size: 1.1rem;
+  color: #888;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-data {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.user-data th,
+.user-data td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.user-data th {
+  background-color: #f0f0f0;
+}
+
+.repo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.repo-list li {
+  margin-bottom: 5px;
+}
+
+.repo-list a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.repo-list a:hover {
+  text-decoration: underline;
+}
+
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.filter-sort input,
+.filter-sort select {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* Toggle switch */
+.toggle-container {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+body.dark .card {
+  background-color: #2c2c2c;
+}
+
+body.dark .user-data th {
+  background-color: #3a3a3a;
+}
+
+body.dark .user-data td,
+body.dark .repo-list a {
+  color: #ccc;
+}
+
+body.dark .repo-list a:hover {
+  color: #fff;
+}
+
+body.dark input,
+body.dark select {
+  background-color: #333;
+  color: white;
+  border-color: #666;
+}
+
+/* Search history buttons */
+.history {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.history button {
+  margin: 5px 5px 0 0;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.history button:hover {
+  background-color: #ddd;
+}
+
+body.dark .history button {
+  background-color: #444;
+  border-color: #666;
+  color: #fff;
+}
+
+body.dark .history button:hover {
+  background-color: #555;
+}
+
+/* Loader */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #0073e6;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error */
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .filter-sort {
+    flex-direction: column;
+  }
+
+  .avatar {
+    width: 120px;
+  }
+}

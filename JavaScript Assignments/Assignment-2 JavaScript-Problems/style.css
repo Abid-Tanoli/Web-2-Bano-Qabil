@@ -1,0 +1,74 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Layout */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* Main Container */
+.assignment-container {
+  width: 100%;
+  max-width: 880px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+/* Header */
+.assignment-header {
+  background-color: #2d3748;
+  color: #fff;
+  padding: 30px 40px;
+  border-bottom: 4px solid #4a90e2;
+}
+
+.assignment-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.meta-info {
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+/* Description Section */
+.assignment-description {
+  padding: 32px 40px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #2c3e50;
+  background-color: #fdfdfd;
+}
+
+.assignment-description code {
+  background-color: #f1f5f9;
+  padding: 4px 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  color: #1a202c;
+}
+
+/* Footer */
+.assignment-footer {
+  background-color: #f7fafc;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #4a5568;
+  border-top: 1px solid #e2e8f0;
+}
+
