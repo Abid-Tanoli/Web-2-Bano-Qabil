@@ -21,6 +21,8 @@ function App() {
   const handleSearch = (e) => {
     e.preventDefault();
     setQuery(searchInput);
+    setSearchInput("");
+    navigate("/"); 
   };
 
   return (

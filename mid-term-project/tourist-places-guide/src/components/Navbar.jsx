@@ -45,6 +45,7 @@ const Navbar = ({
       <div className="flex flex-wrap gap-4 items-center justify-center md:justify-end">
         <Link
           to="/"
+          onClick={handleHomeClick}
           className={`font-medium transition-colors ${
             location.pathname === "/"
               ? "text-white"

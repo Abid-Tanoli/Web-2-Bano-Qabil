@@ -25,7 +25,6 @@ const PlaceDetails = () => {
       <p className="text-blue-800  mb-2 font-bold">{place.region}</p>
       <p className="text-gray-600 text-sm">{place.category}</p>
       <p className="mt-2 font-medium">⭐ {place.rating}</p>
-      
       <p className="mb-2 font-bold text-gray-700 whitespace-pre-line">
         {place.description}
       </p>
